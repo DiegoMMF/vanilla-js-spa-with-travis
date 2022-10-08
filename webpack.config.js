@@ -1,8 +1,6 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
-
-
 export default {
     entry: './src/index.js',
     output: {
@@ -28,7 +26,6 @@ export default {
             inject: true,
             template: './public/index.html',
             filename: './index.html'
-        }
-        )
+        })
     ]
 }
