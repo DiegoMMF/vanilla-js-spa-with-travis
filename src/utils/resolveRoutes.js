@@ -1,7 +1,7 @@
 export const resolveRoutes = route => route.length > 3
         ? `/${route}`
         : route === '/' 
-            ? route 
+            ? route
             : '/:id';
 
 /*

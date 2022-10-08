@@ -1,4 +1,3 @@
-export const getHash = () => location.hash
-                                .slice(1)
-                                .toLocaleLowerCase()
-                                .split('/')[1]
+export const getHash = () => location.hash           // '#/about'
+                                .slice(2)            // 'about'
+                                .toLocaleLowerCase() // por las dudas...
