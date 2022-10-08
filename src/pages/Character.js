@@ -1,4 +1,4 @@
-export default Character = () => `
+export const Character = () => `
     <div class="Character-inner">
         <article class="Characters-card">
             <img src="image" alt="name">

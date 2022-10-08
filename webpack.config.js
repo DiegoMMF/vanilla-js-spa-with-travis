@@ -10,7 +10,7 @@ export default {
         filename: 'main.js'
     },
     resolve: {
-        extensions: [ '.js' ]
+        extensions: ['.js']
     },
     module: {
         rules: [
@@ -24,12 +24,11 @@ export default {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin([
-            {
-                inject: true,
-                template: '.public/index.html',
-                filename: './index.html'
-            }
-        ])
+        new HtmlWebpackPlugin({
+            inject: true,
+            template: './public/index.html',
+            filename: './index.html'
+        }
+        )
     ]
 }
