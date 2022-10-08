@@ -1,5 +1,6 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
+import CopyWebPackPlugin from "copy-webpack-plugin";
 
 export default {
     entry: './src/index.js',
@@ -26,6 +27,12 @@ export default {
             inject: true,
             template: './public/index.html',
             filename: './index.html'
+        }),
+        new CopyWebPackPlugin({
+            patterns: [{
+                from: './src/styles/style.css',
+                to: ''
+            }]
         })
     ]
 }

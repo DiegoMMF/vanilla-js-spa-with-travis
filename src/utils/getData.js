@@ -1,4 +1,4 @@
-const API = 'https://rickandmortyapi.com/api/character';
+const API = 'https://rickandmortyapi.com/api/character/';
 
 export const getData = async (id) => {
     const absolutePath = id ? `${API}${id}` : API;
