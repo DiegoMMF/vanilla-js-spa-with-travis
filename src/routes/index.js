@@ -9,15 +9,9 @@ const routes = {
     '/*': Error404,
 }
 
-export const router = window.addEventListener(
-    'load',
-    async () => {
-        const header = document.getElementById('header') || null
-        // const header = document.getElementById('header') ?? null
-        const content = null || document.getElementById('content')
-        // const content = document.getElementById('content') ?? null
+export const router = async () => {
+        const header = document.getElementById('header')
+        const content = document.getElementById('content')
 
-        // header.innerHTML = '<p>Hola</p>' // Header()
-        console.log(header)
-    }
-);
+        header.innerHTML = Header()
+}
